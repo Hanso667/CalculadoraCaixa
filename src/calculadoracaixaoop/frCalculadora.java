@@ -11,7 +11,6 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
-import java.io.File;
 
 /**
  *
@@ -122,6 +121,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtNota100.setBackground(new java.awt.Color(255, 255, 255));
         txtNota100.setText("0");
         txtNota100.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtNota100.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtNota100MouseClicked(evt);
+            }
+        });
         txtNota100.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNota100ActionPerformed(evt);
@@ -140,6 +144,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtNota50.setBackground(new java.awt.Color(255, 255, 255));
         txtNota50.setText("0");
         txtNota50.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtNota50.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtNota50MouseClicked(evt);
+            }
+        });
         txtNota50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNota50ActionPerformed(evt);
@@ -158,6 +167,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtNota20.setBackground(new java.awt.Color(255, 255, 255));
         txtNota20.setText("0");
         txtNota20.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtNota20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtNota20MouseClicked(evt);
+            }
+        });
         txtNota20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNota20ActionPerformed(evt);
@@ -180,6 +194,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtNota10.setBackground(new java.awt.Color(255, 255, 255));
         txtNota10.setText("0");
         txtNota10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtNota10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtNota10MouseClicked(evt);
+            }
+        });
         txtNota10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNota10ActionPerformed(evt);
@@ -198,6 +217,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtNota5.setBackground(new java.awt.Color(255, 255, 255));
         txtNota5.setText("0");
         txtNota5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtNota5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtNota5MouseClicked(evt);
+            }
+        });
         txtNota5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNota5ActionPerformed(evt);
@@ -216,6 +240,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtNota2.setBackground(new java.awt.Color(255, 255, 255));
         txtNota2.setText("0");
         txtNota2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtNota2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtNota2MouseClicked(evt);
+            }
+        });
         txtNota2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNota2ActionPerformed(evt);
@@ -234,6 +263,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtMoeda1.setBackground(new java.awt.Color(255, 255, 255));
         txtMoeda1.setText("0");
         txtMoeda1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtMoeda1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtMoeda1MouseClicked(evt);
+            }
+        });
         txtMoeda1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtMoeda1ActionPerformed(evt);
@@ -252,6 +286,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtMoeda50.setBackground(new java.awt.Color(255, 255, 255));
         txtMoeda50.setText("0");
         txtMoeda50.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtMoeda50.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtMoeda50MouseClicked(evt);
+            }
+        });
         txtMoeda50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtMoeda50ActionPerformed(evt);
@@ -266,6 +305,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtMoeda25.setBackground(new java.awt.Color(255, 255, 255));
         txtMoeda25.setText("0");
         txtMoeda25.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtMoeda25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtMoeda25MouseClicked(evt);
+            }
+        });
         txtMoeda25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtMoeda25ActionPerformed(evt);
@@ -288,6 +332,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtMoeda10.setBackground(new java.awt.Color(255, 255, 255));
         txtMoeda10.setText("0");
         txtMoeda10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtMoeda10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtMoeda10MouseClicked(evt);
+            }
+        });
         txtMoeda10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtMoeda10ActionPerformed(evt);
@@ -306,6 +355,11 @@ public class frCalculadora extends javax.swing.JFrame {
         txtMoeda5.setBackground(new java.awt.Color(255, 255, 255));
         txtMoeda5.setText("0");
         txtMoeda5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 5, true));
+        txtMoeda5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtMoeda5MouseClicked(evt);
+            }
+        });
         txtMoeda5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtMoeda5ActionPerformed(evt);
@@ -488,65 +542,76 @@ public class frCalculadora extends javax.swing.JFrame {
     private void txtNota100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNota100ActionPerformed
         c.setNota100(Integer.parseInt(txtNota100.getText()));
         txtNota50.requestFocus();
+        txtNota50.selectAll();
     }//GEN-LAST:event_txtNota100ActionPerformed
 
     private void txtNota50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNota50ActionPerformed
         c.setNota50(Integer.parseInt(txtNota50.getText()));
         txtNota20.requestFocus();
+        txtNota20.selectAll();
     }//GEN-LAST:event_txtNota50ActionPerformed
 
     private void txtNota20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNota20ActionPerformed
         c.setNota20(Integer.parseInt(txtNota20.getText()));
         txtNota10.requestFocus();
+        txtNota10.selectAll();
     }//GEN-LAST:event_txtNota20ActionPerformed
 
     private void txtNota10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNota10ActionPerformed
         c.setNota10(Integer.parseInt(txtNota10.getText()));
         txtNota5.requestFocus();
+        txtNota5.selectAll();
     }//GEN-LAST:event_txtNota10ActionPerformed
 
     private void txtNota5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNota5ActionPerformed
         c.setNota5(Integer.parseInt(txtNota5.getText()));
         txtNota2.requestFocus();
+        txtNota2.selectAll();
     }//GEN-LAST:event_txtNota5ActionPerformed
 
     private void txtNota2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNota2ActionPerformed
         c.setNota2(Integer.parseInt(txtNota2.getText()));
         txtMoeda1.requestFocus();
+        txtMoeda1.selectAll();
     }//GEN-LAST:event_txtNota2ActionPerformed
 
     private void txtMoeda1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMoeda1ActionPerformed
         c.setMoeda1(Integer.parseInt(txtMoeda1.getText()));
         txtMoeda50.requestFocus();
+        txtMoeda50.selectAll();
     }//GEN-LAST:event_txtMoeda1ActionPerformed
 
     private void txtMoeda50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMoeda50ActionPerformed
         c.setMoeda50(Integer.parseInt(txtMoeda50.getText()));
         txtMoeda25.requestFocus();
+        txtMoeda25.selectAll();
     }//GEN-LAST:event_txtMoeda50ActionPerformed
 
     private void txtMoeda25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMoeda25ActionPerformed
         c.setMoeda25(Integer.parseInt(txtMoeda25.getText()));
         txtMoeda10.requestFocus();
+        txtMoeda10.selectAll();
     }//GEN-LAST:event_txtMoeda25ActionPerformed
 
     private void txtMoeda10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMoeda10ActionPerformed
         c.setMoeda10(Integer.parseInt(txtMoeda10.getText()));
         txtMoeda5.requestFocus();
+        txtMoeda5.selectAll();
     }//GEN-LAST:event_txtMoeda10ActionPerformed
 
     private void txtMoeda5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMoeda5ActionPerformed
         c.setMoeda5(Integer.parseInt(txtMoeda5.getText()));
         btnCalcular.requestFocus();
+        btnCalcular.doClick();
     }//GEN-LAST:event_txtMoeda5ActionPerformed
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         if (txtNota100.getText().equals("") || txtNota50.getText().equals("") || txtNota20.getText().equals("") || txtNota10.getText().equals("") || txtNota5.getText().equals("") || txtNota2.getText().equals("") || txtMoeda1.getText().equals("") || txtMoeda50.getText().equals("") || txtMoeda25.getText().equals("") || txtMoeda10.getText().equals("") || txtMoeda5.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "um dos parametros esta vazio.");
-        } else if (txtCaixaDigital.getText().equals("")) {
+        } else if (txtCaixaDigital.getText().equals("") || txtCaixaDigital==null) {
             JOptionPane.showMessageDialog(null, "Parametro 'caixa digital' vazio ");
         } else {
-            c.setCaixaDigital(Double.parseDouble(txtCaixaDigital.getText().replace(",", ".")));
+            c.setCaixaDigital(Double.parseDouble(txtCaixaDigital.getText().replace(",",".")));
             c.setNota100(Integer.parseInt(txtNota100.getText()));
             c.setNota50(Integer.parseInt(txtNota50.getText()));
             c.setNota20(Integer.parseInt(txtNota20.getText()));
@@ -569,36 +634,36 @@ public class frCalculadora extends javax.swing.JFrame {
                     + "\nNota 10: " + f.format(c.getNota10()) + "       Moeda 10: " + f.format(c.getMoeda10())
                     + "\nNota 5: " + f.format(c.getNota5()) + "         Moeda 5: " + f.format(c.getMoeda5())
                     + "\nNota 2: " + f.format(c.getNota2()));
-            SimpleDateFormat d = new SimpleDateFormat("MM-dd_HH-mm");
+            SimpleDateFormat d = new SimpleDateFormat("(dd-MM)_HH-mm");
 
-            try (FileWriter pasta = new FileWriter("C:\\Users\\aluno.saolucas\\Desktop\\Caixa\\" + d.format(new Date()) + ".txt")) {
-                pasta.write("------------------------------------------------------\r\n");
-                pasta.write("valor total do caixa fisico: " + f.format(c.calcularTotal()) + "\r\n");
-                pasta.write("Valor total do caixa Digital: " + c.getCaixaDigital() + "\r\n");
-                pasta.write("Diferença: " + c.calcularDiferenca() + "\r\n");
-                pasta.write("------------------------------------------------------\r\n");
-                pasta.write("notas de R$100: " + c.getNota100() + "\r\n");
-                pasta.write("notas de R$50: " + c.getNota50() + "\r\n");
-                pasta.write("notas de R$20: " + c.getNota20() + "\r\n");
-                pasta.write("notas de R$10: " + c.getNota10() + "\r\n");
-                pasta.write("notas de R$5: " + c.getNota5() + "\r\n");
-                pasta.write("notas de R$2: " + c.getNota2() + "\r\n");
-                pasta.write("moedas de R$1: " + c.getMoeda1() + "\r\n");
-                pasta.write("moedas de R$0.5: " + c.getMoeda50() + "\r\n");
-                pasta.write("moedas de R$0.25: " + c.getMoeda25() + "\r\n");
-                pasta.write("moedas de R$0.10: " + c.getMoeda10() + "\r\n");
-                pasta.write("moedas de R$0.05: " + c.getMoeda5() + "\r\n");
-                pasta.write("------------------------------------------------------\r\n");
+        try (FileWriter pasta = new FileWriter("C:\\Users\\Cliente\\OneDrive - kwamenkrumahacademy.org\\Desktop\\Caixa\\" + d.format(new Date()) + ".txt")) {
+            pasta.write("------------------------------------------------------\r\n");
+            pasta.write("valor total do caixa fisico: " + f.format(c.calcularTotal()) + "\r\n");
+            pasta.write("Valor total do caixa Digital: "+ c.getCaixaDigital() + "\r\n");
+            pasta.write("Diferença: "+ c.calcularDiferenca() + "\r\n");
+            pasta.write("------------------------------------------------------\r\n");
+            pasta.write("notas de R$100: " + c.getNota100() + "\r\n");
+            pasta.write("notas de R$50: " + c.getNota50() + "\r\n");
+            pasta.write("notas de R$20: " + c.getNota20() + "\r\n");
+            pasta.write("notas de R$10: " + c.getNota10() + "\r\n");
+            pasta.write("notas de R$5: " + c.getNota5() + "\r\n");
+            pasta.write("notas de R$2: " + c.getNota2() + "\r\n");
+            pasta.write("moedas de R$1: " + c.getMoeda1() + "\r\n");
+            pasta.write("moedas de R$0.5: " + c.getMoeda50() + "\r\n");
+            pasta.write("moedas de R$0.25: " + c.getMoeda25() + "\r\n");
+            pasta.write("moedas de R$0.10: " + c.getMoeda10() + "\r\n");
+            pasta.write("moedas de R$0.05: " + c.getMoeda5() + "\r\n");
+            pasta.write("------------------------------------------------------\r\n");
 
-            } catch (IOException e) {
-                JOptionPane.showMessageDialog(null, "houve um erro ao salvar.");
-            }
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null, "houve um erro ao salvar.");
+        }
         }
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void txtCaixaDigitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCaixaDigitalActionPerformed
-        c.setCaixaDigital(Double.parseDouble(txtCaixaDigital.getText().replace(",", ".")));
         txtNota100.requestFocus();
+        txtNota100.selectAll();
     }//GEN-LAST:event_txtCaixaDigitalActionPerformed
 
     private void txtNota100KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNota100KeyTyped
@@ -677,6 +742,50 @@ public class frCalculadora extends javax.swing.JFrame {
             evt.consume();
         }
     }//GEN-LAST:event_txtMoeda5KeyTyped
+
+    private void txtNota100MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNota100MouseClicked
+        txtNota100.selectAll();
+    }//GEN-LAST:event_txtNota100MouseClicked
+
+    private void txtNota50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNota50MouseClicked
+        txtNota50.selectAll();
+    }//GEN-LAST:event_txtNota50MouseClicked
+
+    private void txtNota20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNota20MouseClicked
+        txtNota20.selectAll();
+    }//GEN-LAST:event_txtNota20MouseClicked
+
+    private void txtNota10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNota10MouseClicked
+        txtNota10.selectAll();
+    }//GEN-LAST:event_txtNota10MouseClicked
+
+    private void txtNota5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNota5MouseClicked
+        txtNota5.selectAll();
+    }//GEN-LAST:event_txtNota5MouseClicked
+
+    private void txtNota2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtNota2MouseClicked
+        txtNota2.selectAll();
+    }//GEN-LAST:event_txtNota2MouseClicked
+
+    private void txtMoeda1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtMoeda1MouseClicked
+        txtMoeda1.selectAll();
+    }//GEN-LAST:event_txtMoeda1MouseClicked
+
+    private void txtMoeda50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtMoeda50MouseClicked
+        txtMoeda50.selectAll();
+    }//GEN-LAST:event_txtMoeda50MouseClicked
+
+    private void txtMoeda25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtMoeda25MouseClicked
+        txtMoeda25.selectAll();
+    }//GEN-LAST:event_txtMoeda25MouseClicked
+
+    private void txtMoeda10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtMoeda10MouseClicked
+        txtMoeda10.selectAll();
+    }//GEN-LAST:event_txtMoeda10MouseClicked
+
+    private void txtMoeda5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtMoeda5MouseClicked
+        txtMoeda5.selectAll();
+    }//GEN-LAST:event_txtMoeda5MouseClicked
 
     /**
      * @param args the command line arguments
