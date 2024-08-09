@@ -11,6 +11,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.swing.JOptionPane;
+import java.io.File;
 
 /**
  *
@@ -545,7 +546,7 @@ public class frCalculadora extends javax.swing.JFrame {
         } else if (txtCaixaDigital.getText().equals("")) {
             JOptionPane.showMessageDialog(null, "Parametro 'caixa digital' vazio ");
         } else {
-            c.setCaixaDigital(Double.parseDouble(txtCaixaDigital.getText().replace(",",".")));
+            c.setCaixaDigital(Double.parseDouble(txtCaixaDigital.getText().replace(",", ".")));
             c.setNota100(Integer.parseInt(txtNota100.getText()));
             c.setNota50(Integer.parseInt(txtNota50.getText()));
             c.setNota20(Integer.parseInt(txtNota20.getText()));
@@ -570,28 +571,28 @@ public class frCalculadora extends javax.swing.JFrame {
                     + "\nNota 2: " + f.format(c.getNota2()));
             SimpleDateFormat d = new SimpleDateFormat("MM-dd_HH-mm");
 
-        try (FileWriter pasta = new FileWriter("C:\\Users\\Cliente\\OneDrive - kwamenkrumahacademy.org\\Desktop\\Caixa\\" + d.format(new Date()) + ".txt")) {
-            pasta.write("------------------------------------------------------\r\n");
-            pasta.write("valor total do caixa fisico: " + f.format(c.calcularTotal()) + "\r\n");
-            pasta.write("Valor total do caixa Digital: "+ c.getCaixaDigital() + "\r\n");
-            pasta.write("Diferença: "+ c.calcularDiferenca() + "\r\n");
-            pasta.write("------------------------------------------------------\r\n");
-            pasta.write("notas de R$100: " + c.getNota100() + "\r\n");
-            pasta.write("notas de R$50: " + c.getNota50() + "\r\n");
-            pasta.write("notas de R$20: " + c.getNota20() + "\r\n");
-            pasta.write("notas de R$10: " + c.getNota10() + "\r\n");
-            pasta.write("notas de R$5: " + c.getNota5() + "\r\n");
-            pasta.write("notas de R$2: " + c.getNota2() + "\r\n");
-            pasta.write("moedas de R$1: " + c.getMoeda1() + "\r\n");
-            pasta.write("moedas de R$0.5: " + c.getMoeda50() + "\r\n");
-            pasta.write("moedas de R$0.25: " + c.getMoeda25() + "\r\n");
-            pasta.write("moedas de R$0.10: " + c.getMoeda10() + "\r\n");
-            pasta.write("moedas de R$0.05: " + c.getMoeda5() + "\r\n");
-            pasta.write("------------------------------------------------------\r\n");
+            try (FileWriter pasta = new FileWriter("C:\\Users\\aluno.saolucas\\Desktop\\Caixa\\" + d.format(new Date()) + ".txt")) {
+                pasta.write("------------------------------------------------------\r\n");
+                pasta.write("valor total do caixa fisico: " + f.format(c.calcularTotal()) + "\r\n");
+                pasta.write("Valor total do caixa Digital: " + c.getCaixaDigital() + "\r\n");
+                pasta.write("Diferença: " + c.calcularDiferenca() + "\r\n");
+                pasta.write("------------------------------------------------------\r\n");
+                pasta.write("notas de R$100: " + c.getNota100() + "\r\n");
+                pasta.write("notas de R$50: " + c.getNota50() + "\r\n");
+                pasta.write("notas de R$20: " + c.getNota20() + "\r\n");
+                pasta.write("notas de R$10: " + c.getNota10() + "\r\n");
+                pasta.write("notas de R$5: " + c.getNota5() + "\r\n");
+                pasta.write("notas de R$2: " + c.getNota2() + "\r\n");
+                pasta.write("moedas de R$1: " + c.getMoeda1() + "\r\n");
+                pasta.write("moedas de R$0.5: " + c.getMoeda50() + "\r\n");
+                pasta.write("moedas de R$0.25: " + c.getMoeda25() + "\r\n");
+                pasta.write("moedas de R$0.10: " + c.getMoeda10() + "\r\n");
+                pasta.write("moedas de R$0.05: " + c.getMoeda5() + "\r\n");
+                pasta.write("------------------------------------------------------\r\n");
 
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(null, "houve um erro ao salvar.");
-        }
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(null, "houve um erro ao salvar.");
+            }
         }
     }//GEN-LAST:event_btnCalcularActionPerformed
 
